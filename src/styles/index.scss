@@ -97,40 +97,42 @@ img {
   }
 }
 
-@import 'partials/improve-section.scss';
-
-.section.quote {
-  display: block;
-  .quote-text {
-    font-size: 1.2em;
-    line-height: 1.3em;
-    color: var(--text-color);
-
-    svg {
-      color: var(--primary-color);
-      font-size: 1.5em;
-      margin-right: 0.5em;
-    }
-  }
-
-  .quote-author {
-    color: var(--text-light);
-    text-align: right;
-    margin-top: 1em;
-  }
-}
-
 .main {
   padding-block: 2vw;
 }
-
-@import 'partials/hero-section.scss';
 
 .container {
   padding-inline: 12vw;
 }
 
+@import 'partials/improve-section.scss';
+@import 'partials/quote-section.scss';
+@import 'partials/chef-section.scss';
+@import 'partials/hero-section.scss';
 @import 'partials/animations.scss';
+
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-block: 3em;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1em;
+
+  .footer-section {
+    p {
+      opacity: 0.9;
+      margin-bottom: 0.5em;
+    }
+
+    p.title {
+      font-size: 1.1em;
+      opacity: 1;
+      font-weight: bold;
+      margin-bottom: 1em;
+    }
+  }
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -141,5 +143,9 @@ img {
     .sidebar-btn {
       display: block;
     }
+  }
+
+  .chef-card {
+    box-shadow: 0 5px 10px var(--shadow-color);
   }
 }

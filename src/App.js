@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import ImproveSkills from './components/ImproveSkills';
 import QuoteSection from './components/QuoteSection';
+import ChefSection from './components/ChefSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <HeroSection />
         <ImproveSkills />
         <QuoteSection />
+        <ChefSection />
       </div>
+      <Footer />
     </div>
   );
 }
